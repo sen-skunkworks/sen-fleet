@@ -10,3 +10,9 @@ Shared build-fleet workshop — Sen's VM and Alex's PC building the same project
 
 ## First job for the PC lane
 See TASKS.md.
+
+## Live sync
+Both builders sync through this repo on a ~45-second loop:
+- Sen's VM runs sync-loop.sh against her clone.
+- Alex's PC runs sync-pc.ps1 inside the cloned folder (run it once; it loops).
+- TASKS.md claims prevent both sides editing the same work at once. If a rebase conflict ever appears, stop and let Sen untangle it — never force-push.
